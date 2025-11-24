@@ -197,11 +197,9 @@ public class OrdenacionHashArchivos {
         List<String> nombres = new ArrayList<>();
         BufferedReader fileReader = new BufferedReader(new FileReader(rutaArchivo));
         String linea;
-        int lineasLeidas = 0;
         int lineasVacias = 0;
         
         while ((linea = fileReader.readLine()) != null) {
-            lineasLeidas++;
             linea = linea.trim();
             
             if (!linea.isEmpty()) {
